@@ -77,16 +77,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4722A5D52A3C65E4001EB904 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				478B0E862A3BFE82004A4320 /* Assets.xcassets */,
-				478B0E882A3BFE82004A4320 /* Preview Content */,
-				478B0E822A3BFE81004A4320 /* SwiftUIAnimationsDemoApp.swift */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		478B0E762A3BFE81004A4320 = {
 			isa = PBXGroup;
 			children = (
@@ -112,9 +102,11 @@
 			children = (
 				478B0EAC2A3BFEE7004A4320 /* ADButtonCircleToPill.swift */,
 				4722A5D12A3C3C52001EB904 /* ADButtonCircleToPillExpandLeftRight.swift */,
+				478B0E862A3BFE82004A4320 /* Assets.xcassets */,
 				478B0E842A3BFE81004A4320 /* ContentView.swift */,
 				4722A5D32A3C4099001EB904 /* Extensions.swift */,
-				4722A5D52A3C65E4001EB904 /* Supporting Files */,
+				478B0E882A3BFE82004A4320 /* Preview Content */,
+				478B0E822A3BFE81004A4320 /* SwiftUIAnimationsDemoApp.swift */,
 			);
 			path = SwiftUIAnimationsDemo;
 			sourceTree = "<group>";
