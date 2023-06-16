@@ -10,7 +10,7 @@ import SwiftUI
 
 // button A を一回押下するとbutton Bが真円からpill型に変化する
 // もう一度押下するとpill型から真円に戻る
-struct ButtonCircleToPill: View {
+struct ADButtonCircleToPill: View {
   @State private var isExpanded = false
 
 
@@ -64,12 +64,12 @@ struct ButtonCircleToPill: View {
   }
 }
 
-struct ButtonCircleToPill_Previews: PreviewProvider {
+struct ADButtonCircleToPill_Previews: PreviewProvider {
   static var previews: some View {
     ZStack {
       Color(.gray)
 
-      ButtonCircleToPill()
+      ADButtonCircleToPill()
     }
   }
 }

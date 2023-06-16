@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4722A5D22A3C3C52001EB904 /* ADButtonCircleToPillExpandLeftRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4722A5D12A3C3C52001EB904 /* ADButtonCircleToPillExpandLeftRight.swift */; };
+		4722A5D42A3C4099001EB904 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4722A5D32A3C4099001EB904 /* Extensions.swift */; };
 		478B0E832A3BFE81004A4320 /* SwiftUIAnimationsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B0E822A3BFE81004A4320 /* SwiftUIAnimationsDemoApp.swift */; };
 		478B0E852A3BFE81004A4320 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B0E842A3BFE81004A4320 /* ContentView.swift */; };
 		478B0E872A3BFE82004A4320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 478B0E862A3BFE82004A4320 /* Assets.xcassets */; };
@@ -14,7 +16,7 @@
 		478B0E942A3BFE82004A4320 /* SwiftUIAnimationsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B0E932A3BFE82004A4320 /* SwiftUIAnimationsDemoTests.swift */; };
 		478B0E9E2A3BFE82004A4320 /* SwiftUIAnimationsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B0E9D2A3BFE82004A4320 /* SwiftUIAnimationsDemoUITests.swift */; };
 		478B0EA02A3BFE82004A4320 /* SwiftUIAnimationsDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B0E9F2A3BFE82004A4320 /* SwiftUIAnimationsDemoUITestsLaunchTests.swift */; };
-		478B0EAD2A3BFEE7004A4320 /* ButtonCircleToPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B0EAC2A3BFEE7004A4320 /* ButtonCircleToPill.swift */; };
+		478B0EAD2A3BFEE7004A4320 /* ADButtonCircleToPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B0EAC2A3BFEE7004A4320 /* ADButtonCircleToPill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4722A5D12A3C3C52001EB904 /* ADButtonCircleToPillExpandLeftRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADButtonCircleToPillExpandLeftRight.swift; sourceTree = "<group>"; };
+		4722A5D32A3C4099001EB904 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; tabWidth = 2; };
 		478B0E7F2A3BFE81004A4320 /* SwiftUIAnimationsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAnimationsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		478B0E822A3BFE81004A4320 /* SwiftUIAnimationsDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationsDemoApp.swift; sourceTree = "<group>"; };
-		478B0E842A3BFE81004A4320 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		478B0E842A3BFE81004A4320 /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 2; };
 		478B0E862A3BFE82004A4320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		478B0E892A3BFE82004A4320 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		478B0E8F2A3BFE82004A4320 /* SwiftUIAnimationsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIAnimationsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +49,7 @@
 		478B0E992A3BFE82004A4320 /* SwiftUIAnimationsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIAnimationsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		478B0E9D2A3BFE82004A4320 /* SwiftUIAnimationsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationsDemoUITests.swift; sourceTree = "<group>"; };
 		478B0E9F2A3BFE82004A4320 /* SwiftUIAnimationsDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationsDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		478B0EAC2A3BFEE7004A4320 /* ButtonCircleToPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCircleToPill.swift; sourceTree = "<group>"; };
+		478B0EAC2A3BFEE7004A4320 /* ADButtonCircleToPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADButtonCircleToPill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4722A5D52A3C65E4001EB904 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				478B0E862A3BFE82004A4320 /* Assets.xcassets */,
+				478B0E882A3BFE82004A4320 /* Preview Content */,
+				478B0E822A3BFE81004A4320 /* SwiftUIAnimationsDemoApp.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		478B0E762A3BFE81004A4320 = {
 			isa = PBXGroup;
 			children = (
@@ -96,11 +110,11 @@
 		478B0E812A3BFE81004A4320 /* SwiftUIAnimationsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				478B0E822A3BFE81004A4320 /* SwiftUIAnimationsDemoApp.swift */,
+				478B0EAC2A3BFEE7004A4320 /* ADButtonCircleToPill.swift */,
+				4722A5D12A3C3C52001EB904 /* ADButtonCircleToPillExpandLeftRight.swift */,
 				478B0E842A3BFE81004A4320 /* ContentView.swift */,
-				478B0EAC2A3BFEE7004A4320 /* ButtonCircleToPill.swift */,
-				478B0E862A3BFE82004A4320 /* Assets.xcassets */,
-				478B0E882A3BFE82004A4320 /* Preview Content */,
+				4722A5D32A3C4099001EB904 /* Extensions.swift */,
+				4722A5D52A3C65E4001EB904 /* Supporting Files */,
 			);
 			path = SwiftUIAnimationsDemo;
 			sourceTree = "<group>";
@@ -260,7 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				478B0EAD2A3BFEE7004A4320 /* ButtonCircleToPill.swift in Sources */,
+				4722A5D42A3C4099001EB904 /* Extensions.swift in Sources */,
+				478B0EAD2A3BFEE7004A4320 /* ADButtonCircleToPill.swift in Sources */,
+				4722A5D22A3C3C52001EB904 /* ADButtonCircleToPillExpandLeftRight.swift in Sources */,
 				478B0E852A3BFE81004A4320 /* ContentView.swift in Sources */,
 				478B0E832A3BFE81004A4320 /* SwiftUIAnimationsDemoApp.swift in Sources */,
 			);
