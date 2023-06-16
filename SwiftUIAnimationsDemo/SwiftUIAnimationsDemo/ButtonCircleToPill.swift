@@ -9,6 +9,7 @@ import SwiftUI
 
 
 // button A を一回押下するとbutton Bが真円からpill型に変化する
+// もう一度押下するとpill型から真円に戻る
 struct ButtonCircleToPill: View {
   @State private var isExpanded = false
 
