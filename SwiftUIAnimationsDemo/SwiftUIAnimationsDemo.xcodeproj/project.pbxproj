@@ -14,6 +14,7 @@
 		478B0E942A3BFE82004A4320 /* SwiftUIAnimationsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B0E932A3BFE82004A4320 /* SwiftUIAnimationsDemoTests.swift */; };
 		478B0E9E2A3BFE82004A4320 /* SwiftUIAnimationsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B0E9D2A3BFE82004A4320 /* SwiftUIAnimationsDemoUITests.swift */; };
 		478B0EA02A3BFE82004A4320 /* SwiftUIAnimationsDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B0E9F2A3BFE82004A4320 /* SwiftUIAnimationsDemoUITestsLaunchTests.swift */; };
+		478B0EAD2A3BFEE7004A4320 /* ButtonCircleToPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B0EAC2A3BFEE7004A4320 /* ButtonCircleToPill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		478B0E992A3BFE82004A4320 /* SwiftUIAnimationsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIAnimationsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		478B0E9D2A3BFE82004A4320 /* SwiftUIAnimationsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationsDemoUITests.swift; sourceTree = "<group>"; };
 		478B0E9F2A3BFE82004A4320 /* SwiftUIAnimationsDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationsDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		478B0EAC2A3BFEE7004A4320 /* ButtonCircleToPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCircleToPill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				478B0E822A3BFE81004A4320 /* SwiftUIAnimationsDemoApp.swift */,
 				478B0E842A3BFE81004A4320 /* ContentView.swift */,
+				478B0EAC2A3BFEE7004A4320 /* ButtonCircleToPill.swift */,
 				478B0E862A3BFE82004A4320 /* Assets.xcassets */,
 				478B0E882A3BFE82004A4320 /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				478B0EAD2A3BFEE7004A4320 /* ButtonCircleToPill.swift in Sources */,
 				478B0E852A3BFE81004A4320 /* ContentView.swift in Sources */,
 				478B0E832A3BFE81004A4320 /* SwiftUIAnimationsDemoApp.swift in Sources */,
 			);
