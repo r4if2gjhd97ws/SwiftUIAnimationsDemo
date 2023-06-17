@@ -29,7 +29,7 @@ class ADButtonCircleToPillExpandLeftRightViewModel: ObservableObject {
   @Published var marginCenterAndRight: CGFloat = 0
   
   let commonButtonHeight: CGFloat = 70
-  let horizontalMargin: CGFloat = 20
+  let horizontalMargin: CGFloat = 20 / DeviceInfo.iPhone8Size.width * DeviceInfo.width
   let bigButtonSize: CGSize = .init(width: 200, height: 56)
   let smallButtonSize: CGSize = .init(width: 83, height: 33)
   
@@ -103,7 +103,9 @@ struct ADButtonCircleToPillExpandLeftRight: View {
   var body: some View {
     ZStack {
       HStack(spacing: 0) {
-        Button(action: { }) {
+        Button(action: {
+          print("A is tapped")
+        }) {
           ZStack {
             Circle()
               .fill(Color.red)
@@ -112,6 +114,7 @@ struct ADButtonCircleToPillExpandLeftRight: View {
               .foregroundColor(.white)
           }
         }
+        .opacity(model.expandButtonState == .leftExpanded ? 0 : 1)
         
         Spacer()
           .background(GeometryReader { g in
@@ -143,7 +146,9 @@ struct ADButtonCircleToPillExpandLeftRight: View {
             }
           })
         
-        Button(action: { }) {
+        Button(action: {
+          print("C is tapped")
+        }) {
           ZStack {
             Circle()
               .fill(Color.blue)
@@ -152,6 +157,7 @@ struct ADButtonCircleToPillExpandLeftRight: View {
               .foregroundColor(.white)
           }
         }
+        .opacity(model.expandButtonState == .rightExpanded ? 0 : 1)
       }
       .background()
       
@@ -183,7 +189,7 @@ struct ADButtonCircleToPillExpandLeftRight: View {
       .background(UIColor.cyan.withAlphaComponent(0.3).swiftUI)
       .animation(.default, value: model.expandButtonState)
     }
-    .padding()
+    .padding(.horizontal, model.horizontalMargin)
   }
 }
 
