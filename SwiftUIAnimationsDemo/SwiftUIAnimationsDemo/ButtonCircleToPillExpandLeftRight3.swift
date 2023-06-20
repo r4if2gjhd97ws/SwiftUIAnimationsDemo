@@ -1,14 +1,21 @@
 //
-//  ButtonCircleToPillExpandLeftRight2.swift
+//  ButtonCircleToPillExpandLeftRight3.swift
 //  SwiftUIAnimationsDemo
 //
-//  Created by yohei on 2023/06/16.
+//  Created by yohei on 2023/06/20.
 //
 
 import SwiftUI
 
 
-class ADButtonCircleToPillExpandLeftRightViewModel2: ObservableObject {
+enum NextButtonsType {
+  case singleNext
+  case bigRetrySmallNext
+  case smallRetryBigNext
+  case singleRetry
+}
+
+class ADButtonCircleToPillExpandLeftRightViewModel3: ObservableObject {
   enum ExpandButtonState {
     case none
     case leftExpanded
@@ -125,8 +132,8 @@ class ADButtonCircleToPillExpandLeftRightViewModel2: ObservableObject {
   }
 }
 
-struct ADButtonCircleToPillExpandLeftRight2: View {
-  @StateObject var model: ADButtonCircleToPillExpandLeftRightViewModel2
+struct ADButtonCircleToPillExpandLeftRight3: View {
+  @StateObject var model: ADButtonCircleToPillExpandLeftRightViewModel3
 
   init() {
     _model = .init(wrappedValue: .init())
@@ -243,12 +250,12 @@ struct ADButtonCircleToPillExpandLeftRight2: View {
 
 }
 
-struct ADButtonCircleToPillExpandLeftRight_Previews2: PreviewProvider {
+struct ADButtonCircleToPillExpandLeftRight_Previews3: PreviewProvider {
   static var previews: some View {
     ZStack {
       Color(.gray)
 
-      ADButtonCircleToPillExpandLeftRight2()
+      ADButtonCircleToPillExpandLeftRight3()
     }
   }
 }
