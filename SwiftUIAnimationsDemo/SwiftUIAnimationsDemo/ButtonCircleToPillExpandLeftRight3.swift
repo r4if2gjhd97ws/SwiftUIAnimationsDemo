@@ -38,40 +38,55 @@ class ADButtonCircleToPillExpandLeftRightViewModel3: ObservableObject {
 
   @Published var expandButtonState: ExpandButtonState = .none
 
-  @Published var marginCenterAndLeft: CGFloat = 0
-  @Published var marginCenterAndRight: CGFloat = 0
+  @Published var _marginCenterAndLeft: CGFloat = 0
+  @Published var _marginCenterAndRight: CGFloat = 0
 
   @Published var screenWidth: CGFloat = 0
 
   let commonButtonHeight: CGFloat = 70
+  let smallButtonHeight: CGFloat = 33
+
+  var smallButtonWidth: CGFloat {
+//    if DeviceInfo.is
+    return 96
+//    / DeviceInfo.iPhone8Size.width * DeviceInfo.width
+    
+  }
+
   let horizontalMargin: CGFloat = 20 / DeviceInfo.iPhone8Size.width * DeviceInfo.width
   let bigButtonSize: CGSize = .init(width: 200, height: 56)
   let smallButtonSize: CGSize = .init(width: 83, height: 33)
 
   var marginLead: CGFloat {
+    if expandButtonState == .leftExpanded {
+      return 16 / DeviceInfo.iPhone8Size.width * DeviceInfo.width
+    }
     return 10 / DeviceInfo.iPhone8Size.width * DeviceInfo.width
   }
 
   var marginTrailing: CGFloat {
+    if expandButtonState == .leftExpanded {
+      return 30 / DeviceInfo.iPhone8Size.width * DeviceInfo.width
+    }
     return 10 / DeviceInfo.iPhone8Size.width * DeviceInfo.width
   }
-
+  
   var defaultLeftButtonSize: CGSize {
-    return .init(width: commonButtonHeight, height: commonButtonHeight)
+    return .init(width: smallButtonWidth, height: smallButtonHeight)
   }
 
   var defaultRightButtonSize: CGSize {
-    return .init(width: commonButtonHeight, height: commonButtonHeight)
+    return .init(width: smallButtonWidth, height: smallButtonHeight)
   }
 
   var leftButtonSize: CGSize {
     if expandButtonState == .leftExpanded || expandButtonState == .allExpanded { return .zero }
-    return .init(width: commonButtonHeight, height: commonButtonHeight)
+    return .init(width: defaultLeftButtonSize.width, height: defaultLeftButtonSize.height)
   }
 
   var rightButtonSize: CGSize {
     if expandButtonState == .rightExpanded || expandButtonState == .allExpanded { return .zero }
-    return .init(width: commonButtonHeight, height: commonButtonHeight)
+    return .init(width: defaultRightButtonSize.width, height: defaultRightButtonSize.height)
   }
 
   var centerButtonSize: CGSize {
@@ -82,11 +97,11 @@ class ADButtonCircleToPillExpandLeftRightViewModel3: ObservableObject {
     var width: CGFloat = .zero
     switch expandButtonState {
     case .none:
-      width = marginCenterAndLeft
+      width = _marginCenterAndLeft
     case .leftExpanded:
       width = 0
     case .rightExpanded:
-      width = marginCenterAndLeft
+      width =  20 / DeviceInfo.iPhone8Size.width * DeviceInfo.width
     case .allExpanded:
       width = 0
     }
@@ -101,15 +116,15 @@ class ADButtonCircleToPillExpandLeftRightViewModel3: ObservableObject {
       size = .init(width: commonButtonHeight,
         height: commonButtonHeight)
     case .leftExpanded:
-      size = .init(width: defaultLeftButtonSize.width + marginCenterAndLeft + commonButtonHeight,
+      size = .init(width: defaultLeftButtonSize.width + _marginCenterAndLeft + commonButtonHeight,
         height: commonButtonHeight)
 
     case .rightExpanded:
-      size = .init(width: defaultRightButtonSize.width + marginCenterAndRight + commonButtonHeight,
+      size = .init(width: defaultRightButtonSize.width + _marginCenterAndRight + commonButtonHeight,
         height: commonButtonHeight)
 
     case .allExpanded:
-      size = .init(width: defaultLeftButtonSize.width + marginCenterAndLeft + commonButtonHeight + defaultRightButtonSize.width + marginCenterAndRight, height: commonButtonHeight)
+      size = .init(width: defaultLeftButtonSize.width + _marginCenterAndLeft + commonButtonHeight + defaultRightButtonSize.width + _marginCenterAndRight, height: commonButtonHeight)
     }
     print("\(#function): \(expandButtonState) - \(size)")
     return size
@@ -119,9 +134,9 @@ class ADButtonCircleToPillExpandLeftRightViewModel3: ObservableObject {
     var width: CGFloat = .zero
     switch expandButtonState {
     case .none:
-      width = marginCenterAndRight
+      width = _marginCenterAndRight
     case .leftExpanded:
-      width = marginCenterAndRight
+      width =  20 / DeviceInfo.iPhone8Size.width * DeviceInfo.width
     case .rightExpanded:
       width = 0
     case .allExpanded:
@@ -152,15 +167,15 @@ struct ADButtonCircleToPillExpandLeftRight3: View {
           print("A is tapped")
         }) {
           ZStack {
-            Circle()
+            RoundedRectangle(cornerRadius: model.leftButtonSize.height)
               .fill(Color.red)
-              .frame(width: model.leftButtonSize.width,
-              height: model.leftButtonSize.height)
+              .frame(width: model.leftButtonSize.width)
+              .frame(height: model.leftButtonSize.height)
             Text("A")
               .foregroundColor(.white)
           }
         }
-          .opacity(model.expandButtonState == .leftExpanded ? 0 : 1)
+          .opacity(model.leftButtonSize == .zero ? 0 : 1)
 
         Spacer()
           .frame(height: 10)
@@ -191,17 +206,17 @@ struct ADButtonCircleToPillExpandLeftRight3: View {
           print("C is tapped")
         }) {
           ZStack {
-            Circle()
+            RoundedRectangle(cornerRadius: model.rightButtonSize.height)
               .fill(Color.blue)
               .frame(width: model.rightButtonSize.width, height: model.rightButtonSize.height)
             Text("C")
               .foregroundColor(.white)
           }
         }
+        .opacity(model.rightButtonSize == .zero ? 0 : 1)
 
         Spacer()
           .frame(width: model.marginTrailing)
-          .opacity(model.expandButtonState == .rightExpanded ? 0 : 1)
       }
         .background()
     }
@@ -215,13 +230,14 @@ struct ADButtonCircleToPillExpandLeftRight3: View {
           .frame(width: model.marginLead)
 
         Spacer()
-          .frame(width: model.leftButtonSize.width, height: model.leftButtonSize.height)
+          .frame(width: model.defaultLeftButtonSize.width, height: model.defaultLeftButtonSize.height)
+          .background(.brown)
 
         Spacer()
           .background(GeometryReader { g in
           Color.clear.onAppear {
             Task.detached { @MainActor in
-              model.marginCenterAndLeft = g.size.width
+              model._marginCenterAndLeft = g.size.width
             }
           }
         })
@@ -233,14 +249,15 @@ struct ADButtonCircleToPillExpandLeftRight3: View {
           .background(GeometryReader { g in
           Color.clear.onAppear {
             Task.detached { @MainActor in
-              model.marginCenterAndRight = g.size.width
+              model._marginCenterAndRight = g.size.width
             }
           }
         })
 
         Spacer()
-          .frame(width: model.rightButtonSize.width, height: model.rightButtonSize.height)
-
+          .frame(width: model.defaultRightButtonSize.width, height: model.defaultRightButtonSize.height)
+          .background(.brown)
+        
         Spacer()
           .frame(width: model.marginTrailing)
       }

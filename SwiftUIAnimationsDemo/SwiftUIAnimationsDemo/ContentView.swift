@@ -15,7 +15,7 @@ struct ContentView: View {
         .foregroundColor(.accentColor)
       Text("Hello, world!")
       
-      ADButtonCircleToPillExpandLeftRight()
+      ADButtonCircleToPillExpandLeftRight3()
     }
     .padding()
   }
