@@ -119,7 +119,7 @@ struct ADButtonCircleToPillExpandLeftRight: View {
         Spacer()
           .background(GeometryReader { g in
             Color.clear.onAppear {
-              DispatchQueue.main.async {
+              Task.detached { @MainActor in
                 model.marginCenterAndLeft = g.size.width
                 print(model.marginCenterAndLeft)
               }
@@ -139,7 +139,7 @@ struct ADButtonCircleToPillExpandLeftRight: View {
         Spacer()
           .background(GeometryReader { g in
             Color.clear.onAppear {
-              DispatchQueue.main.async {
+              Task.detached { @MainActor in
                 model.marginCenterAndRight = g.size.width
                 print(model.marginCenterAndRight)
               }
