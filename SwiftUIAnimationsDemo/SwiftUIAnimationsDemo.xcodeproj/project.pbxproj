@@ -11,6 +11,8 @@
 		4709A0E32A415E7B001F15E3 /* ButtonCircleToPillExpandLeftRight3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4709A0E22A415E7B001F15E3 /* ButtonCircleToPillExpandLeftRight3.swift */; };
 		4722A5D22A3C3C52001EB904 /* ADButtonCircleToPillExpandLeftRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4722A5D12A3C3C52001EB904 /* ADButtonCircleToPillExpandLeftRight.swift */; };
 		4722A5D42A3C4099001EB904 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4722A5D32A3C4099001EB904 /* Extensions.swift */; };
+		47886D6E2A430C7E005EAEDD /* ADLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47886D6D2A430C7E005EAEDD /* ADLayout.swift */; };
+		47886D702A43D5F7005EAEDD /* ADLayout2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47886D6F2A43D5F7005EAEDD /* ADLayout2.swift */; };
 		478B0E832A3BFE81004A4320 /* SwiftUIAnimationsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B0E822A3BFE81004A4320 /* SwiftUIAnimationsDemoApp.swift */; };
 		478B0E852A3BFE81004A4320 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B0E842A3BFE81004A4320 /* ContentView.swift */; };
 		478B0E872A3BFE82004A4320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 478B0E862A3BFE82004A4320 /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		4709A0E22A415E7B001F15E3 /* ButtonCircleToPillExpandLeftRight3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCircleToPillExpandLeftRight3.swift; sourceTree = "<group>"; };
 		4722A5D12A3C3C52001EB904 /* ADButtonCircleToPillExpandLeftRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADButtonCircleToPillExpandLeftRight.swift; sourceTree = "<group>"; };
 		4722A5D32A3C4099001EB904 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; tabWidth = 2; };
+		47886D6D2A430C7E005EAEDD /* ADLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADLayout.swift; sourceTree = "<group>"; };
+		47886D6F2A43D5F7005EAEDD /* ADLayout2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADLayout2.swift; sourceTree = "<group>"; };
 		478B0E7F2A3BFE81004A4320 /* SwiftUIAnimationsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAnimationsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		478B0E822A3BFE81004A4320 /* SwiftUIAnimationsDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationsDemoApp.swift; sourceTree = "<group>"; };
 		478B0E842A3BFE81004A4320 /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 2; };
@@ -110,6 +114,8 @@
 				4709A0E22A415E7B001F15E3 /* ButtonCircleToPillExpandLeftRight3.swift */,
 				478B0E862A3BFE82004A4320 /* Assets.xcassets */,
 				478B0E842A3BFE81004A4320 /* ContentView.swift */,
+				47886D6D2A430C7E005EAEDD /* ADLayout.swift */,
+				47886D6F2A43D5F7005EAEDD /* ADLayout2.swift */,
 				4722A5D32A3C4099001EB904 /* Extensions.swift */,
 				478B0E882A3BFE82004A4320 /* Preview Content */,
 				478B0E822A3BFE81004A4320 /* SwiftUIAnimationsDemoApp.swift */,
@@ -276,6 +282,8 @@
 				4709A0E12A413CC5001F15E3 /* ADButtonCircleToPillExpandLeftRight2.swift in Sources */,
 				478B0EAD2A3BFEE7004A4320 /* ADButtonCircleToPill.swift in Sources */,
 				4709A0E32A415E7B001F15E3 /* ButtonCircleToPillExpandLeftRight3.swift in Sources */,
+				47886D702A43D5F7005EAEDD /* ADLayout2.swift in Sources */,
+				47886D6E2A430C7E005EAEDD /* ADLayout.swift in Sources */,
 				4722A5D22A3C3C52001EB904 /* ADButtonCircleToPillExpandLeftRight.swift in Sources */,
 				478B0E852A3BFE81004A4320 /* ContentView.swift in Sources */,
 				478B0E832A3BFE81004A4320 /* SwiftUIAnimationsDemoApp.swift in Sources */,

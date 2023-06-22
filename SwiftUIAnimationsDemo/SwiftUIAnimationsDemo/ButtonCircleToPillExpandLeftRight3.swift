@@ -47,7 +47,6 @@ class ADButtonCircleToPillExpandLeftRightViewModel3: ObservableObject {
   let smallButtonHeight: CGFloat = 33
 
   var smallButtonWidth: CGFloat {
-//    if DeviceInfo.is
     return 96
 //    / DeviceInfo.iPhone8Size.width * DeviceInfo.width
     
