@@ -16,6 +16,8 @@ struct ContentView: View {
       Text("Hello, world!")
       
       ADButtonCircleToPillExpandLeftRight3()
+      
+      ADScroll()
     }
     .padding()
   }
