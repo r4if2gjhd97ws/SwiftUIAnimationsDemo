@@ -23,6 +23,7 @@
 		478B0E9E2A3BFE82004A4320 /* SwiftUIAnimationsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B0E9D2A3BFE82004A4320 /* SwiftUIAnimationsDemoUITests.swift */; };
 		478B0EA02A3BFE82004A4320 /* SwiftUIAnimationsDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B0E9F2A3BFE82004A4320 /* SwiftUIAnimationsDemoUITestsLaunchTests.swift */; };
 		478B0EAD2A3BFEE7004A4320 /* ADButtonCircleToPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B0EAC2A3BFEE7004A4320 /* ADButtonCircleToPill.swift */; };
+		47C6961D2A720EDC004F1B27 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C6961C2A720EDC004F1B27 /* Dialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		478B0E9D2A3BFE82004A4320 /* SwiftUIAnimationsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationsDemoUITests.swift; sourceTree = "<group>"; };
 		478B0E9F2A3BFE82004A4320 /* SwiftUIAnimationsDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationsDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		478B0EAC2A3BFEE7004A4320 /* ADButtonCircleToPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADButtonCircleToPill.swift; sourceTree = "<group>"; };
+		47C6961C2A720EDC004F1B27 /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				478B0E862A3BFE82004A4320 /* Assets.xcassets */,
 				478B0E842A3BFE81004A4320 /* ContentView.swift */,
 				47886D6D2A430C7E005EAEDD /* ADLayout.swift */,
+				47C6961C2A720EDC004F1B27 /* Dialog.swift */,
 				47886D6F2A43D5F7005EAEDD /* ADLayout2.swift */,
 				47886D712A43E982005EAEDD /* ADSpringAnimation.swift */,
 				4722A5D32A3C4099001EB904 /* Extensions.swift */,
@@ -287,6 +290,7 @@
 				47886D722A43E982005EAEDD /* ADSpringAnimation.swift in Sources */,
 				4722A5D42A3C4099001EB904 /* Extensions.swift in Sources */,
 				4709A0E12A413CC5001F15E3 /* ADButtonCircleToPillExpandLeftRight2.swift in Sources */,
+				47C6961D2A720EDC004F1B27 /* Dialog.swift in Sources */,
 				478B0EAD2A3BFEE7004A4320 /* ADButtonCircleToPill.swift in Sources */,
 				47886D762A4435FD005EAEDD /* Scroll.swift in Sources */,
 				4709A0E32A415E7B001F15E3 /* ButtonCircleToPillExpandLeftRight3.swift in Sources */,
